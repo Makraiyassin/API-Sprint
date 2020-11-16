@@ -8,14 +8,18 @@ function dog(){
     })
 }
 
+function persoGameOfThrone() {
+        let rand = Math.floor(Math.random()*2000)+1
+        //https://www.anapioficeandfire.com/api/characters/1880 = Rob stark , 583 = Jhon Snow
+        fetch(`https://www.anapioficeandfire.com/api/characters/${rand}`)
+        .then( response => response.json())
+        .then( (data) => {
+            document.getElementById("info").innerText = `name: ${data.name} \ngender: ${data.gender} \nborn: ${data.born}\ntitles: ${data.titles} \naliases: ${data.aliases}`
+            console.log(data);
+    })    
+}
+
 document.querySelector("#button").addEventListener("click", function(){
     dog()
+    persoGameOfThrone()
 })
-
-// document.querySelector("#button").addEventListener("click", function(){
-    // fetch("https://anapioficeandfire.com/api/characters/583")
-    // .then( response => response.json())
-    // .then( (data) => {
-    //     console.log(data);
-    // })
-// })

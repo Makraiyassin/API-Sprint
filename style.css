@@ -1,6 +1,7 @@
 body{
     background: url(fond.png);
     background-size: cover;
+    font-family: 'Open Sans', sans-serif;
 }
 #container{
     background-color: rgb(252, 228, 192);
@@ -14,4 +15,9 @@ body{
     width: max-content;
     margin: 10px 190px;
     font-size: large;
+}
+#info{
+    font-weight: bold; 
+    font-size: large; 
+    color: rgb(51, 51, 51);
 }
