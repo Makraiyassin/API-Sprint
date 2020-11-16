@@ -1,8 +1,10 @@
-
+body{
+    background: url(fond.png);
+    background-size: cover;
+}
 #container{
-    background-color: rgb(255, 238, 238);
+    background-color: rgb(252, 228, 192);
     width: 500px;
-    height: 500px;
     margin: auto;
 }
 #button{
