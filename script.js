@@ -1,4 +1,4 @@
-document.querySelector("#button").addEventListener("click", function(){
+function dog(){
     fetch("https://dog.ceo/api/breeds/image/random")
     .then( response => response.json())
     .then( (data) => {
@@ -6,6 +6,10 @@ document.querySelector("#button").addEventListener("click", function(){
         // document.getElementById("button").insertAdjacentHTML("afterend",'<br><br><img width = "400px" style = "margin-left: 10%" src ="'+data.message+'">')
         console.log(data);
     })
+}
+
+document.querySelector("#button").addEventListener("click", function(){
+    dog()
 })
 
 // document.querySelector("#button").addEventListener("click", function(){
